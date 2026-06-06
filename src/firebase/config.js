@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBRc381PKlAr-rkRpfRvNqXofeU4XEwGmM",
-  authDomain: "momentum-309ce.firebaseapp.com",
-  projectId: "momentum-309ce",
-  storageBucket: "momentum-309ce.firebasestorage.app",
-  messagingSenderId: "982625438740",
-  appId: "1:982625438740:web:9b1a696ee32d55468a6b01"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
