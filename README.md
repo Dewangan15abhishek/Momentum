@@ -69,6 +69,8 @@ export const db = getFirestore(app);
 npm run dev
 ```
 
----
+## Author
 
-## Project Structure
+**Abhishek Dewangan**  
+B.Tech CSE — KIIT University  
+[GitHub](https://github.com/Dewangan15abhishek)
